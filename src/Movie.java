@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 //id,name,original_language,vote_count,vote_average,first_air_date,last_air_date,in_production,popularity,genres
 
-public class Movie implements Comparable<Movie> {
+public class Movie {
     private Integer id;
     private String name;
     private String original_language;
@@ -43,6 +43,22 @@ public class Movie implements Comparable<Movie> {
             genresList.add(genre);
         }
         return genresList;
+    }
+
+    public Double getVote_average(){
+    return vote_average;
+    }
+
+    public Double getPopularity(){
+        return popularity;
+    }
+
+    public Integer getVote_count(){
+        return vote_count;
+    }
+
+    public String getOriginal_language(){
+        return original_language;
     }
 
 }
