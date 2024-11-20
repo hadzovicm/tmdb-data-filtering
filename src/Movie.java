@@ -61,6 +61,22 @@ public class Movie {
         return original_language;
     }
 
+    public String getFirst_air_date(){
+        return first_air_date;
+    }
+
+    public Boolean getIn_production(){
+        return in_production;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public ArrayList<String> getGenres(){
+        return genres;
+    }
+
 }
 
 
